@@ -1,81 +1,120 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <style type="text/css">
+        .gray p{
+            color: gray;
+            text-align: center;
+        }
+        .centerh1{
+            color: #000;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 900;
+            width: 1000px;margin-left: auto;margin-right: auto;
+        }
+        .ac {
+            margin:0 auto;
+            border-top:50px solid black;
 
-<style>
-    .gray p{
-        color: gray;
-        text-align: center;
-    }
-    .centerh1 h1{
-        color: #000;
-        text-align: center;
-        font-size: 50pt;
-        font-weight: 900;
-    }
-    .ac {
-        margin:0 auto;
-        border-top:50px solid black;
+        }
+        .head{
+            background-color: #000;color: white;font-weight: bold;font-size: 30px;
+            text-align:center;padding: 10px; 
+        }
+        .content{
+            width: 1000px;margin-left: auto;margin-right: auto;
+        }
+        .box{
+            width: 280px;padding: 10px;margin: 10px;background-color:white;
+            display: inline-block;vertical-align: top ;/*相對於父親區塊*/
+            text-align: center; /*置中*/height: 150px;line-height: 30px;
+        }
+        .title{
+        font-weight: bold;
+        }
+        .center{
+            text-align: center;
+        }
+        .dppban{
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: black;
+        }
 
-    }
-    a{
-        color:cornflowerblue;
-        font-size: 30pt;
-    }
-    a:hover {
-        color:red;
-        font-size: 33pt;
-        font-style: large;
-    }
-    
-
-
-</style>
-  <head>
+        @media screen and (max-width: 600px) {
+            .head{font-size: 37px;}
+            .content{width:100%; text-align: center;} 
+        }
+        .whiteback{
+            background-color: #eeeeee;
+            width: 1000px;
+            height: auto;
+            color: whitesmoke;
+        }
+        input{
+            border: 0;
+            background-color: green;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        input:hover{
+            color: green;
+            background-color: white;
+            border: 2px green solid;
+        }
+    </style>    
+    <meta name="viewport" content="width=device-width, inital-scale=1, maximum-scale=1" />
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
-    <title>⚠該內容已遭到屏蔽</title>
+    <title>⚠內容遭到屏蔽</title>
   </head>
-  <body>
-    <div class="ac">
-        
-    </div>
-    <div class="centerh1">
-        <h1>您正在瀏覽違反《數位中介服務法》之內容</h1>
-    </div>
-    <div class="gray">
-        <p><strong><i>⚠該內容已違反《數位中介服務法》，已被屏蔽。</i></strong></p>
-            <div>
-                <p><br><a href="https://www.ncc.gov.tw/chinese/files/22062/5532_220629_1.pdf/" target="_blank">查看原因?</a></p>
+  <body style="margin:0 ;background-color: #eeeeee;">
+    <div class="head">⚠遭到審查的內容</div>
+    <div class="content">
+        <div class="dppban">您正在瀏覽</div>
+        <div class="dppban">違反《數位中介服務法》之內容</div>
+        <div class="box">
+            <div class="title">
+                <div>推薦內容:中華民國台灣</div>
             </div>
+            <div>蔡英文主席上任公開講話</div>
+            <div>表示誓死捍衛領土與主權</div> 
+            <div>台灣獨立</div>
         </div>
-    </form>
-
-    <h2>建議您瀏覽之網站:
-        <table>
-        <tr>
-            <div>
-                <th><a href="https://www.dpp.org.tw/" target="_blank">民主進步黨 建黨35年 普天同慶</a></th> 
+        <div class="box">
+            <div class="title">⚠ 該圖片違反《數位中介服務法》 </div>
+            <div class="title">已被屏蔽</div>
+        </div>
+        <div class="box">
+            <div class="title">推薦內容:維護網路言論和平 杜絕假消息!</div>
+            <div>NCC 公開說明會 : 保證民眾權益不受損</div>
+            <div>點擊連結了解</div>
+            <div><a href="https://www.ncc.gov.tw/chinese/files/22062/5532_220629_1.pdf">偉大創舉與和平網路自由言論</a></div>
+        </div>
+        <div class="gray"><p><strong><i>⚠文章已違反《數位中介服務法》，被屏蔽。</i></strong></p></div>    
+        <div class="center"><a href="https://www.ncc.gov.tw/chinese/files/22062/5532_220629_1.pdf/"><input type="button" value="查看原因" name="reason" style="width: 250px;height: 36px;margin: 0 auto;"></a></div>
+                <div class="dppban">建議您瀏覽之網站:</div>
+            <div class="box">
+                <div class="title">
+                    民主進步黨建黨35年
+                </div>
+                <div>綠色執政 品質保證! </div>
+                <div>最強大的網軍力量 堪比實體塔利班 </div>
+                <div><a href="https://www.dpp.org.tw/signup"><input type="button" value="線上入黨" name="joindpp" style="width:80px;height: 30px;"></a></div>
             </div>
-            <td>偉大世紀的領袖: <i><strong>ㄘㄨㄚˋ英文</strong></i></td>
-            <img src="https://upload.wikimedia.org/wikipedia/zh/thumb/c/c1/Emblem_of_Democratic_Progressive_Party_%28new%29.svg/1024px-Emblem_of_Democratic_Progressive_Party_%28new%29.svg.png" width="90"></li>
-        </tr>
-
-        </table>
-    
-        
-
-        <h4>意見提供: (請在對話框中輸入)
-        <form>
-        <input type="text">
-        <input type="submit">
-        <br>
-        <p><small><i>對於此網站之審核結果 您:</i></small></p>
-        <select>
-            <option>選項</option>
-            <option>同意</option>
-            <option>不同意</option>
-        </select>
-        <br>
-        <input type="submit">
+            <div class="box">
+                <div class="title">建議與反饋</div>
+                <div>建議一直都是我們的助力</div>
+                <div>很抱歉 為了避免違反中介法</div>
+                <div>我們禁止您發表任何意見</div>
+                <div><input type="text" value="很抱歉! 您不能發表意見" style="background-color:gainsboro;color: #000;text-align: left;width: 150px;"> <input type="submit" value="送出" disabled></div>
+            </div>
+            <div class="box">
+                <div class="title">暫無</div>
+            </div>
+    </div>
   </body>
 </html>
